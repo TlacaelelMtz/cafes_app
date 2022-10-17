@@ -72,7 +72,7 @@ class _LoginForm extends StatelessWidget {
             keyboardType: TextInputType.emailAddress,
             decoration: InputDecorations.authInputDecoration(
                 hintText: 'user@email.com',
-                labelText: 'Correo electrónico',
+                labelText: 'login',
                 prefixIcon: Icons.alternate_email_sharp),
             onChanged: (value) => loginForm.email = value,
             validator: (value) {
@@ -91,7 +91,7 @@ class _LoginForm extends StatelessWidget {
             keyboardType: TextInputType.text,
             decoration: InputDecorations.authInputDecoration(
                 hintText: '*****',
-                labelText: 'Contraseña',
+                labelText: 'Password',
                 prefixIcon: Icons.lock_outline),
             onChanged: (value) => loginForm.password = value,
             validator: (value) {
